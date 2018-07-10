@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.png">
+  <!-- <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js">
+  </script> -->
+  <script type="text/javascript">
+    window.onload = function() {
+      var browser = navigator.appName
+      var b_version = navigator.appVersion
+      var version = b_version.split(";");
+      var trim_Version = version[1].replace(/[ ]/g, "");
+      if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE8.0") {
+        var hidden = document.getElementById('hiddenBox')
+        var app = document.getElementById('app')
+        target.style.display = 'block'
+        app.style.display = 'none'
+      }
+    }
+  </script>
+  <style media="screen">
+    #hiddenBox {
+      width: 100%;
+      height: 100%;
+      display: none;
+      background-image: url('static/bg.jpg');
+      color: white;
+    }
+
+    #hidden {
+      display: none;
+      width: 1200px;
+      height: 600px;
+      margin: 0 auto;
+    }
+
+    .span {
+      display: block;
+      margin: 0 auto;
+      margin-top: 200px;
+      margin-left: 430px;
+    }
+
+    .part {
+      width: 150px;
+      height: 100px;
+      display: inline-block;
+      margin-top: 50px;
+      margin-left: 100px;
+      position: relative;
+      text-align: center;
+    }
+
+    .part img {
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .part a {
+      text-align: center;
+      color: white;
+      text-decoration: none;
+    }
+
+    .part1 {
+      margin-left: 250px;
+    }
+  </style>
+  <title>网络安全管理系统</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <div id="hiddenBox">
+    <div id='hidden'>
+      <span class='span'>您的IE浏览器版本过低,请升级或更换浏览器!</span>
+      <div class="part part1">
+        <img src="static/browser_01.png">
+        <a href="http://redirector.gvt1.com/edgedl/release2/chrome/AP69_Ub-zM4h_62.0.3202.89/62.0.3202.89_chrome_installer.exe">点击下载</a>
+        <span></span>
+      </div>
+      <div class="part">
+        <img src="static/browser_06.png">
+        <a href="http://www.firefox.com.cn/">点击下载</a>
+      </div>
+      <div class="part">
+        <img src="static/browser_08.png">
+        <a href="http://www.maxthon.cn/">点击下载</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
